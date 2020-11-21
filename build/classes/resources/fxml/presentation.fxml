@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.canvas.Canvas?>
+<?import javafx.scene.control.ColorPicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="ap" prefHeight="550.0" prefWidth="800.0" styleClass="mainFxmlClass" stylesheets="@../css/presentation.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.falafel.controller.PresentationController">
+   <children>
+      <Label fx:id="lMsg" layoutX="558.0" layoutY="14.0" textFill="WHITE" AnchorPane.bottomAnchor="10.0" AnchorPane.rightAnchor="10.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <HBox fx:id="slidePane1" alignment="CENTER" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+      <HBox fx:id="slidePane2" alignment="CENTER" layoutX="10.0" layoutY="10.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Canvas fx:id="canvas" height="550.0" width="800.0" />
+         </children></HBox>
+      <HBox fx:id="hbTop" alignment="TOP_RIGHT" layoutX="10.0" layoutY="10.0" spacing="6.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <padding>
+            <Insets left="5.0" right="5.0" top="5.0" />
+         </padding>
+         <children>
+            <JFXButton fx:id="bMini" contentDisplay="GRAPHIC_ONLY" layoutX="55.0" layoutY="15.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="25.0" ripplerFill="WHITE" style="-fx-background-color: #ffffff33; -fx-background-radius: 5em;" text="mini">
+               <graphic>
+                  <FontAwesomeIconView glyphName="MINUS" />
+               </graphic>
+            </JFXButton>
+            <JFXButton fx:id="bWindow" contentDisplay="GRAPHIC_ONLY" layoutX="15.0" layoutY="15.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="25.0" ripplerFill="WHITE" style="-fx-background-color: #ffffff33; -fx-background-radius: 5em;" text="window">
+               <graphic>
+                  <FontAwesomeIconView glyphName="DESKTOP" />
+               </graphic>
+            </JFXButton>
+            <JFXButton fx:id="bExit" contentDisplay="GRAPHIC_ONLY" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="25.0" ripplerFill="WHITE" style="-fx-background-color: #ffffff33; -fx-background-radius: 5em;" text="exit">
+               <graphic>
+                  <FontAwesomeIconView glyphName="CLOSE" />
+               </graphic>
+            </JFXButton>
+         </children>
+      </HBox>
+      <HBox fx:id="hbButtons" alignment="CENTER_LEFT" layoutX="26.0" layoutY="274.0" prefHeight="51.0" spacing="10.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0">
+         <children>
+            <JFXButton id="bMenu" fx:id="bHome" contentDisplay="GRAPHIC_ONLY" layoutX="359.0" layoutY="26.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="30.0" prefWidth="30.0" ripplerFill="WHITE" text="prev">
+               <graphic>
+                  <FontAwesomeIconView fill="WHITE" glyphName="HOME" size="18" />
+               </graphic>
+            </JFXButton>
+            <JFXButton id="bMenu" fx:id="bPrev" contentDisplay="GRAPHIC_ONLY" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="30.0" prefWidth="30.0" ripplerFill="WHITE" text="prev">
+               <graphic>
+                  <FontAwesomeIconView fill="WHITE" glyphName="ARROW_LEFT" size="14" />
+               </graphic>
+            </JFXButton>
+            <JFXButton id="bMenu" fx:id="bNext" contentDisplay="GRAPHIC_ONLY" layoutX="423.0" layoutY="26.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="30.0" prefWidth="30.0" ripplerFill="WHITE" text="prev">
+               <graphic>
+                  <FontAwesomeIconView fill="WHITE" glyphName="ARROW_RIGHT" size="14" />
+               </graphic>
+            </JFXButton>
+            <ColorPicker id="bMenu" fx:id="cpPencil" prefHeight="30.0" prefWidth="30.0" />
+            <JFXButton id="bMenu" fx:id="bClear" contentDisplay="GRAPHIC_ONLY" layoutX="100.0" layoutY="21.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="30.0" prefWidth="30.0" ripplerFill="WHITE" text="prev">
+               <graphic>
+                  <FontAwesomeIconView fill="WHITE" glyphName="REFRESH" size="14" />
+               </graphic>
+            </JFXButton>
+         </children>
+         <padding>
+            <Insets left="10.0" />
+         </padding></HBox>
+   </children>
+</AnchorPane>

@@ -1,0 +1,88 @@
+/*
+ * Empty Stylesheet file.
+ */
+
+.mainFxmlClass {
+    -fx-background-color:transparent;
+}
+.color-picker {
+    -fx-opacity:0;
+}
+#trans{
+    -fx-background-image:none;
+}
+#transBoard{
+    -fx-background-image:url("../images/trans_half.png");
+    -fx-background-size:stretch;
+}
+#whiteBoard{
+    -fx-background-image:url("../images/whiteboard.png");
+    -fx-background-size:stretch;
+}
+#blackBoard{
+    -fx-background-image:url("../images/blackboard.png");
+    -fx-background-size:stretch;
+}
+.button{
+    -fx-background-radius: 5em;
+    -fx-text-fill: white;
+}
+#bMenu{
+    -fx-background-image:url("../images/favicon.png");
+    -fx-background-size:100%;
+    -fx-background-position:center center;
+    -fx-background-repeat:no-repeat;
+    -fx-background-color: #38e000;
+}
+#bMenu:hover{
+    -fx-background-color: #3fff00;
+}
+#bMenu:pressed{
+    -fx-background-color: #38e00095;
+}
+#bPpt{
+    -fx-background-color: #f9d100;
+}
+#bPpt:hover{
+    -fx-background-color: #ffda1a;
+}
+#bPpt:pressed{
+    -fx-background-color: #e8c300;
+}
+#bBoard{
+    -fx-background-color: #000000;
+}
+#bBoard:hover{
+    -fx-background-color: #505050;
+}
+#bBoard:pressed{
+    -fx-background-color: #616161;
+}
+#bWipe{
+    -fx-background-color: #9c27b0;
+}
+#bWipe:hover{
+    -fx-background-color: #b83bce;
+}
+#bWipe:pressed{
+    -fx-background-color: #8d1da0;
+}
+#bPencilActive{
+    -fx-background-color: #4dacff;
+}
+#bPencilActive:hover{
+    -fx-background-color: #61b5ff;
+}
+#bPencilActive:pressed{
+    -fx-background-color: #44a8ff;
+}
+#bPencilInactive{
+    -fx-background-color: #F44336;
+}
+#bPencilInactive:hover{
+    -fx-background-color: #ff584c;
+}
+#bPencilInactive:pressed{
+    -fx-background-color: #ea392c;
+}
+

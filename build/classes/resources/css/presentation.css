@@ -1,0 +1,14 @@
+/*
+ * Empty Stylesheet file.
+ */
+
+.mainFxmlClass {
+    -fx-background-color:black;
+}
+.color-picker .color-picker-label .picker-color{
+    -fx-padding: 0px 0px 0px 1px;
+}
+#bMenu{
+     -fx-background-color: #38e000d6;
+     -fx-background-radius: 5em;
+}
