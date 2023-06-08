@@ -10,5 +10,5 @@
 ![2](2.png)
 ![3](3.png)
 
-I hope will barokah :D
-Amen.. :DD
+Semoga barokah
+Amiin.. :DD
